@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: master-nginx
+  labels: 
+    app: pod-a
+spec: 
+  containers:
+  - name: nginx
+    image: darshp288/cloudethix_master_nginx_techdp:v1
+    ports: 
+    - containerPort: 80
